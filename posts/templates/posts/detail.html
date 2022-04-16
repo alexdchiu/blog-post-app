@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Detail!</title>
+    <link rel="stylesheet" href="{% static "blog.css" %}">
+  </head>
+
+  <body>
+    <header>
+      <div>My Blog Posts</div>
+      <nav>
+        <a href="{% url "posts_list" %}">Back to blog</a>
+        <a href="{% url "create_post" %}">Create a post</a>
+      </nav>
+      <main>
+        <div class="detail-page-blog">
+          <h2 class="post-title">
+            <a href="detail.html">{{ post.title }} </a>
+          </h2>
+          <p>{{ post.content }}</p>
+        </div>
+      </main>
+      <footer>
+        <div>Copyright 2022 by Alex Chiu</div>
+        <p>This is my site that contains all of my posts that you can read.</p>
+      </footer>
+    </header>
+  </body>
+</html>

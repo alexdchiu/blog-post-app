@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+html {
+  background-color: beige;
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 12px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+}
+
+footer {
+  background-color: burlywood;
+  margin-top: 24px;
+  padding: 24px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+input {
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+textarea {
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+button {
+  padding: 12px;
+  font-size: 110%;
+}
+
+.main-page-blog {
+  background-color: white;
+  border: 1px solid lightblue;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: auto auto auto auto 1fr;
+  grid-template-columns: auto 1fr;
+  column-gap: 25px;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.detail-page-blog {
+  background-color: white;
+  padding: 24px;
+}
+
+.post-form {
+  background-color: white;
+  padding: 24px;
+}
